@@ -6,6 +6,9 @@ public class Main {
 
         GalacticSpaceCraft spacecraft = new GalacticSpaceCraft(startingPosition[0], startingPosition[1], startingPosition[2], initialDirection);
 
+        System.out.println("Starting Position: (" + spacecraft.getX() + ", " + spacecraft.getY() + ", " + spacecraft.getZ() + ")");
+        System.out.println("Initial Direction: " + spacecraft.getDirection());
+
         for (String command : commands) {
             switch (command) {
                 case "f":
